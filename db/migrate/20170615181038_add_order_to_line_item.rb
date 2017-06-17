@@ -1,5 +1,12 @@
-class AddOrderToLineItem < ActiveRecord::Migration[5.0]
+class CreateOrders < ActiveRecord::Migration[5.0]
   def change
-    add_reference :line_items, :order, foreign_key: true
+    create_table :orders do |t|
+      t.string :name
+      t.text :address
+      t.string :email
+      t.integer :pay_type
+
+      t.timestamps
+    end
   end
 end

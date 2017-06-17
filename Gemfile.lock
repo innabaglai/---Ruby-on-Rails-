@@ -27,6 +27,11 @@ GEM
     activejob (5.0.3)
       activesupport (= 5.0.3)
       globalid (>= 0.3.6)
+    activemerchant (1.67.0)
+      activesupport (>= 3.2.14, < 6.x)
+      builder (>= 2.1.2, < 4.0.0)
+      i18n (>= 0.6.9)
+      nokogiri (~> 1.4)
     activemodel (5.0.3)
       activesupport (= 5.0.3)
     activemodel-serializers-xml (1.0.1)
@@ -77,6 +82,8 @@ GEM
     execjs (2.7.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    haml (4.0.7)
+      tilt
     i18n (0.8.4)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -87,6 +94,9 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
+    kaminari (0.17.0)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.6)
@@ -171,6 +181,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant (~> 1.58)
   activemodel-serializers-xml
   bcrypt (~> 3.1.7)
   byebug
@@ -179,9 +190,11 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.2)
+  haml (~> 4.0)
   jbuilder (~> 2.5)
   jquery-rails
   jquery-ui-rails
+  kaminari (~> 0.16)
   mysql2 (~> 0.4.0)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
